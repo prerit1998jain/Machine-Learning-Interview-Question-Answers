@@ -1,0 +1,28 @@
+########  QUESTIONS ON LEARNING THEORY ######
+
+QUESTION 1: DESCRIBE BIAS AND VARIANCE WITH EXAMPLES.
+ANSWER: BIAS: Bias is similar to the mean squared error, or any measure of error
+              which you may know. A model with high bias is not acceptable. Model
+              quality is inversely proportional to Bias.
+
+        VARIANCE: Variance shows how subject the model is to outliers. Meaning
+                  those values which are far away from the mean of the variable.
+                  A model with very high variance, is a more complex model, which
+                  is fit to the training data.
+
+        To describe a set of values of a particular variable, let us say we define
+        a polynomial function, so as we increase the degree of polynomial to fit
+        the training data, the variance of the model increases while the bias
+        decreases. While in lower degrees, bias is large but variance (complexiety)
+        is very low.
+
+        So, while selecting a model we should select the best possible Bias-VARIANCE
+        trade-off, for ensuring a better quality model.
+
+        SUMMARY: HIGH BIAS: --------> UNDERFITTING.
+                 HIGH VARIANCE: ----> OVERFITTING.
+
+
+
+QUESTION 2: WHAT IS EMPIRICAL RISK MINIMIZATION?
+ANSWER: 
