@@ -55,4 +55,8 @@ ANSWER: TRAINING ERROR: The error on the training dataset, i.e the dataset avail
                               our model to perform well on the unseen data, our major
                               target is to reduce the generalization error.
 
-Link: To understand better. (https://www.youtube.com/watch?v=Xeo6LGcsxkg) 
+Generally, E_generalization is greater than E_train.
+
+Link: To understand better. (https://www.youtube.com/watch?v=Xeo6LGcsxkg)
+
+QUESTION 5: STATE THE UNIFORM CONVERGENCE THEOREM AND DERIVE IT.
