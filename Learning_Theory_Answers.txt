@@ -36,3 +36,23 @@ ANSWER: In a general setting, We want to minimize the true risk associated with
 Link: To understand better. (https://en.wikipedia.org/wiki/Empirical_risk_minimization)
 
 QUESTION 3: WHAT IS UNION BOUND AND HOEFFDING'S INEQUALITY?
+ANSWER:
+
+QUESTION 4: WRITE THE FORMULA FOR TRAINING ERROR AND GENERALIZATION ERROR.
+POINT OUT THE DIFFERENCES.
+ANSWER: TRAINING ERROR: The error on the training dataset, i.e the dataset available
+                        to the model while training, is known as training error.
+                        In case of a classifier f(x).
+
+                        Formula: E_train = sum(error(f(xi),yi))/n
+                        where
+                        (xi,yi): belongs to the training dataset.
+                        error(): is sum function which is high if f(xi) and yi are
+                        very dissimilar.
+
+        GENERALIZATION ERROR: The error on the unseen or test data produced by the
+                              model, is known as generalized error. Since, we want
+                              our model to perform well on the unseen data, our major
+                              target is to reduce the generalization error.
+
+Link: To understand better. (https://www.youtube.com/watch?v=Xeo6LGcsxkg) 
