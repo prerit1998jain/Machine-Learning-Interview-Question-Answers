@@ -1,0 +1,69 @@
+
+## Questions of Model and Feature Selection ##
+
+
+QUESTION: HOW DO YOU TRADE-OFF BETWEEN BIAS AND VARIANCE?
+ANSWER: High bias signifies that the model isn't able to identify certain features
+        even if a very large dataset is provided for training, this signifies that
+        model underfits, and we would try to increase the complexiety of the model,
+        upto a level so that, it is able to improve itself, if larger training
+        dataset is provided.
+
+        But with the increasing complexiety of the model, the variance also starts,
+        so, considering a highly complex model, the model will overfit.
+
+        So, in order to find perfect trade-off, we should try with a low complexiety
+        model, and gradually increase the complexiety and check it's performance
+        on the validation set at each iteration. After a certain complexiety, the
+        bias will be significantly low, and model would be able to generalize well
+        on validation set.
+
+
+QUESTION: WHAT ARE THE DIFFERENT ATTRIBUTES THAT CAN BE SELECTED BY MODEL SELECTION
+          METHODS?
+ANSWER: Choice of different Machine Learning approach, for eg: SVMs, Logistic
+        regression, etc - or chosing between different hyperparameters or sets of
+        the same machine learning approach, -e.g deciding the complexiety fo the
+        model, through deciding the polynomial degrees for linear regression.
+
+QUESTION: WHY DO WE NEED VALIDATION SET?
+ANSWER: Validation is basically used to tune hyperparameters - you don't want to
+        tune them on the training set because that can result in overfitting. nor
+        do you want to tune them on test set, because than as we tuned it on test
+        set, so we don't have any other dataset for checking the performance of the
+        model, because the model had already seen all the data.
+
+        That is why we tune our hyperparameters on a dataset different from both
+        training and test dataset. We train our model on training dataset, we tune
+        it's hyperparameters by checking it's performance with validation dataset.
+        And finally check the performance of model on Test Dataset.
+
+QUESTION: DESCRIBE DIFFERENT CROSS VALIDATION TECHNIQUES?
+ANSWER: Following are the various types of Cross Validation Techniques:
+
+        a) K-Fold CROSS VALIDATION:
+        We divide the whole dataset into k different subgroups. Now at each iteration
+        the data of k-1 subgroups are used for training the model, and the remaining
+        one subgroup is used as a validation set. This allows the model not to suffer
+        from the underfitting due to less data (as in Holdout Validation). The error
+        score is computed by averaging over all k iterations.
+
+        b) STRATIFIED K-FOLD CROSS VALIDATION:
+        It is a slight variation of the K-Fold Cross validation, in which we
+        make each of the k-subgroups a representative of the whole dataset, by
+        ensuring that the proportion of the positive and negative samples, are same
+        in each subgroup as in the whole training dataset.
+
+        The above two cross validation techniques are non-exhaustive cross validation
+        techniques i.e only a selection combination of training and validation set
+        are considered.
+
+        c) LEAVE-P-OUT CROSS VALIDATION:
+        In this technique, out of n data points, n-p are used for training, and
+        p are used for validation, untill all the combinations are considered.
+        Then the error score is computed by averaging over all possible combinations.
+        This is an exhaustive cross validation technique.
+
+To understand more: https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f
+
+QUESTION: 
