@@ -66,4 +66,9 @@ ANSWER: Following are the various types of Cross Validation Techniques:
 
 To understand more: https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f
 
-QUESTION: 
+QUESTION: WHAT IS HOLD-OUT CROSS VALIDATION? What are the advantages and disadvantages?
+ANSWER: HOLD-OUT CROSS VALIDATION is a validation technique, where a part of the
+        dataset is separated (holded out) from it, and is used for tuning the hyperparameters.
+
+        ADVANTAGES: It is better than traditional validation techniques.
+        DISADVANTAGES: 
