@@ -71,4 +71,35 @@ ANSWER: HOLD-OUT CROSS VALIDATION is a validation technique, where a part of the
         dataset is separated (holded out) from it, and is used for tuning the hyperparameters.
 
         ADVANTAGES: It is better than traditional validation techniques.
-        DISADVANTAGES: 
+        DISADVANTAGES: This technique can still produce model with high variance, because
+        the evaluation highly depends on which data is in validation set, and which
+        is in training set. We should ensure that both the datasets are a good representative,
+        of the whole dataset.
+
+QUESTION: WHAT IS K-FOLD CROSS VALIDATION? ADVANTAGES AND DISADVANTAGES?
+ANSWER: For definition look into above question.
+        ADVANTAGES: Unlike, Hold-out cross validation, K-Fold cross validation,
+        uses each data point in both training as well as validation, hence the
+        evaluation process will not suffer from underfitting, due to lack of training
+        data.
+        DISADVANTAGES: It is a non-exhaustive technique.
+
+QUESTION: WHAT IS LEAVE-ONE-OUT CROSS VALIDATION? ADVANTAGES AND DISADVANTAGES.
+ANSWER: DEFINITION is mentioned in one of the above questions.
+        ADVANTAGES: It is an exhastive technique, which take all the possible
+        combinations of dataset into account.
+        DISADVANTAGES:
+
+QUESTION: WHY IS FEATURE SELECTION REQUIRED?
+ANSWER: Feature selection is one of the trivial part of building a machine learning
+        model. Generally the data collected from a source consists of many unnecessary
+        variables which aren't useful for out problem statement.
+        Also, some of the variables may be correlated to each other, and the one doesn't
+        add much information if first one is already added in our model, so these
+        variables without adding any information, just increasing the computations.
+
+        Also, irrelevant and partially relevant features can negatively impact the
+        model performance.
+
+        Hence, it is necessary to get right number of variables, and right features
+        selected for an efficient and accurate model.
