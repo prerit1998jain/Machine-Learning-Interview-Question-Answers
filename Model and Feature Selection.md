@@ -6,7 +6,7 @@ QUESTION: HOW DO YOU TRADE-OFF BETWEEN BIAS AND VARIANCE?
 
 ANSWER:
 
-        High bias signifies that the model isn't able to identify certain features
+        <b>High bias</b> signifies that the model isn't able to identify certain features
         even if a very large dataset is provided for training, this signifies that
         model underfits, and we would try to increase the complexiety of the model,
         upto a level so that, it is able to improve itself, if larger training
