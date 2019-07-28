@@ -1,7 +1,8 @@
-########  QUESTIONS ON LEARNING THEORY ######
+##  QUESTIONS ON LEARNING THEORY ##
 
 QUESTION 1: DESCRIBE BIAS AND VARIANCE WITH EXAMPLES. (**)
-ANSWER: BIAS: Bias of the model is expected generalization error even if we were
+ANSWER: 
+        BIAS: Bias of the model is expected generalization error even if we were
               to fit in a very large-training set because there will be some patterns
               in the data that model can't capture due to lack of complexiety.
 
