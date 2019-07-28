@@ -2,6 +2,7 @@
 
 QUESTION 1: DESCRIBE BIAS AND VARIANCE WITH EXAMPLES. (**)
 ANSWER: 
+        
         BIAS: Bias of the model is expected generalization error even if we were
               to fit in a very large-training set because there will be some patterns
               in the data that model can't capture due to lack of complexiety.
@@ -25,7 +26,9 @@ ANSWER:
 Link: To understand better. (https://www.bmc.com/blogs/bias-variance-machine-learning)
 
 QUESTION 2: WHAT IS EMPIRICAL RISK MINIMIZATION?
-ANSWER: In a general setting, We want to minimize the true risk associated with
+ANSWER: 
+
+        In a general setting, We want to minimize the true risk associated with
         our model, that it's predictions will deviate from the ground truth.
         But, since we don't know the true family of functions, or the true joint probability
         distribution which the data follows, it is not possible to calculate
@@ -41,7 +44,9 @@ ANSWER:
 
 QUESTION 4: WRITE THE FORMULA FOR TRAINING ERROR AND GENERALIZATION ERROR.
 POINT OUT THE DIFFERENCES.
-ANSWER: TRAINING ERROR: The error on the training dataset, i.e the dataset available
+ANSWER: 
+        
+        TRAINING ERROR: The error on the training dataset, i.e the dataset available
                         to the model while training, is known as training error.
                         In case of a classifier f(x).
 
@@ -56,7 +61,7 @@ ANSWER: TRAINING ERROR: The error on the training dataset, i.e the dataset avail
                               our model to perform well on the unseen data, our major
                               target is to reduce the generalization error.
 
-Generally, E_generalization is greater than E_train.
+        Generally, E_generalization is greater than E_train.
 
 Link: To understand better. (https://www.youtube.com/watch?v=Xeo6LGcsxkg)
 
