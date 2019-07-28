@@ -136,4 +136,20 @@ ANSWER: It is the opposite of forward feature selection method. We start from al
 To Understand Better: http://clopinet.com/isabelle/Projects/ETH/Questions_lecture_8.html
 
 QUESTION: WHAT IS FILTER FEATURE SELECTION METHOD AND DESCRIBE TWO OF THEM?
-ANSWER: Filter 
+ANSWER: Filter methods are independent of any machine learning algorithms, it basically
+        finds some statistical relation between the response variable and the feature,
+        and accordingly decide the importance of a particular feature.
+        Some of the filter methods are:
+        a) Pearson's Correlation.
+        b) LDA: Linear Discriminant analysis.
+        c) ANOVA: Analysis of Variance.
+        d) Chi-Square Test.
+
+QUESTION: WHAT IS MUTUAL INFORMATION AND KL DIVERGENCE?
+ANSWER: a) Mutual Information: The mutual information between two random variables
+           is a measure of the mutual dependence between the two variables. More
+           specifically, it quantifies the "amount of information" obtained about
+           one random variable observing the other.
+        b) KL-divergence:
+
+To understand better: https://en.wikipedia.org/wiki/Mutual_information
