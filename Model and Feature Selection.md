@@ -3,12 +3,14 @@
 
 
 QUESTION: HOW DO YOU TRADE-OFF BETWEEN BIAS AND VARIANCE?
-ANSWER: High bias signifies that the model isn't able to identify certain features
+
+ANSWER:
+
+        High bias signifies that the model isn't able to identify certain features
         even if a very large dataset is provided for training, this signifies that
         model underfits, and we would try to increase the complexiety of the model,
         upto a level so that, it is able to improve itself, if larger training
         dataset is provided.
-
         But with the increasing complexiety of the model, the variance also starts,
         so, considering a highly complex model, the model will overfit.
 
@@ -21,13 +23,17 @@ ANSWER: High bias signifies that the model isn't able to identify certain featur
 
 QUESTION: WHAT ARE THE DIFFERENT ATTRIBUTES THAT CAN BE SELECTED BY MODEL SELECTION
           METHODS?
-ANSWER: Choice of different Machine Learning approach, for eg: SVMs, Logistic
+ANSWER: 
+
+        Choice of different Machine Learning approach, for eg: SVMs, Logistic
         regression, etc - or chosing between different hyperparameters or sets of
         the same machine learning approach, -e.g deciding the complexiety fo the
         model, through deciding the polynomial degrees for linear regression.
 
 QUESTION: WHY DO WE NEED VALIDATION SET?
-ANSWER: Validation is basically used to tune hyperparameters - you don't want to
+ANSWER: 
+        
+        Validation is basically used to tune hyperparameters - you don't want to
         tune them on the training set because that can result in overfitting. nor
         do you want to tune them on test set, because than as we tuned it on test
         set, so we don't have any other dataset for checking the performance of the
@@ -39,7 +45,9 @@ ANSWER: Validation is basically used to tune hyperparameters - you don't want to
         And finally check the performance of model on Test Dataset.
 
 QUESTION: DESCRIBE DIFFERENT CROSS VALIDATION TECHNIQUES?
-ANSWER: Following are the various types of Cross Validation Techniques:
+ANSWER: 
+        
+        Following are the various types of Cross Validation Techniques:
 
         a) K-Fold CROSS VALIDATION:
         We divide the whole dataset into k different subgroups. Now at each iteration
@@ -67,7 +75,9 @@ ANSWER: Following are the various types of Cross Validation Techniques:
 To understand more: https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f
 
 QUESTION: WHAT IS HOLD-OUT CROSS VALIDATION? What are the advantages and disadvantages?
-ANSWER: HOLD-OUT CROSS VALIDATION is a validation technique, where a part of the
+ANSWER: 
+        
+        HOLD-OUT CROSS VALIDATION is a validation technique, where a part of the
         dataset is separated (holded out) from it, and is used for tuning the hyperparameters.
 
         ADVANTAGES: It is better than traditional validation techniques.
@@ -77,7 +87,9 @@ ANSWER: HOLD-OUT CROSS VALIDATION is a validation technique, where a part of the
         of the whole dataset.
 
 QUESTION: WHAT IS K-FOLD CROSS VALIDATION? ADVANTAGES AND DISADVANTAGES?
-ANSWER: For definition look into above question.
+ANSWER: 
+        
+        For definition look into above question.
         ADVANTAGES: Unlike, Hold-out cross validation, K-Fold cross validation,
         uses each data point in both training as well as validation, hence the
         evaluation process will not suffer from underfitting, due to lack of training
@@ -85,7 +97,9 @@ ANSWER: For definition look into above question.
         DISADVANTAGES: It is a non-exhaustive technique.
 
 QUESTION: WHAT IS LEAVE-ONE-OUT CROSS VALIDATION? ADVANTAGES AND DISADVANTAGES.
-ANSWER: DEFINITION is mentioned in one of the above questions.
+ANSWER: 
+        
+        DEFINITION is mentioned in one of the above questions.
         ADVANTAGES: It is an exhastive technique, which take all the possible
         combinations of dataset into account.
         DISADVANTAGES:
@@ -93,7 +107,9 @@ ANSWER: DEFINITION is mentioned in one of the above questions.
 To understand better: https://www.analyticsvidhya.com/blog/2016/12/introduction-to-feature-selection-methods-with-an-example-or-how-to-select-the-right-variables/
 
 QUESTION: WHY IS FEATURE SELECTION REQUIRED?
-ANSWER: Feature selection is one of the trivial part of building a machine learning
+ANSWER: 
+        
+        Feature selection is one of the trivial part of building a machine learning
         model. Generally the data collected from a source consists of many unnecessary
         variables which aren't useful for out problem statement.
         Also, some of the variables may be correlated to each other, and the one doesn't
@@ -106,7 +122,9 @@ ANSWER: Feature selection is one of the trivial part of building a machine learn
 
 
 QUESTION: WHAT IS FORWARD FEATURE SELECTION METHOD? ADVANTAGES AND DISADVANTAGES.
-ANSWER: Forward feature selection is a wrapper method for feature selection, where we
+ANSWER: 
+        
+        Forward feature selection is a wrapper method for feature selection, where we
         start with no features and add the features in the model one by one, untill
         the performance doesn't stops improving. The feature added is the one which
         best improves the performance.
@@ -118,7 +136,9 @@ ANSWER: Forward feature selection is a wrapper method for feature selection, whe
         consuming process.
 
 QUESTION: WHAT IS BACKWARD FEATURE SELECTION METHOD? ADVANTAGES AND DISADVANTAGES.
-ANSWER: It is the opposite of forward feature selection method. We start from all
+ANSWER: 
+        
+        It is the opposite of forward feature selection method. We start from all
         the features and removes the least significant feature at each iteration
         which improves the performance of the model. We repeat this untill no further
         improvement is possible.
@@ -136,7 +156,9 @@ ANSWER: It is the opposite of forward feature selection method. We start from al
 To Understand Better: http://clopinet.com/isabelle/Projects/ETH/Questions_lecture_8.html
 
 QUESTION: WHAT IS FILTER FEATURE SELECTION METHOD AND DESCRIBE TWO OF THEM?
-ANSWER: Filter methods are independent of any machine learning algorithms, it basically
+ANSWER: 
+        
+        Filter methods are independent of any machine learning algorithms, it basically
         finds some statistical relation between the response variable and the feature,
         and accordingly decide the importance of a particular feature.
         Some of the filter methods are:
@@ -146,7 +168,9 @@ ANSWER: Filter methods are independent of any machine learning algorithms, it ba
         d) Chi-Square Test.
 
 QUESTION: WHAT IS MUTUAL INFORMATION AND KL DIVERGENCE?
-ANSWER: a) Mutual Information: The mutual information between two random variables
+ANSWER: 
+        
+        a) Mutual Information: The mutual information between two random variables
            is a measure of the mutual dependence between the two variables. More
            specifically, it quantifies the "amount of information" obtained about
            one random variable observing the other.
