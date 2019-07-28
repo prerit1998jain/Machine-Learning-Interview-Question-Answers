@@ -168,14 +168,17 @@ ANSWER:
         c) ANOVA: Analysis of Variance.
         d) Chi-Square Test.
 
-QUESTION: WHAT IS MUTUAL INFORMATION AND KL DIVERGENCE?
+QUESTION: WHAT IS MUTUAL INFORMATION AND KL DIVERGENCE? INTUTITVELY DESCRIBE KL DIVERGENCE.
 ANSWER: 
         
         a) Mutual Information: The mutual information between two random variables
            is a measure of the mutual dependence between the two variables. More
            specifically, it quantifies the "amount of information" obtained about
            one random variable observing the other.
-        b) KL-divergence:
+        b) KL-divergence: KL divergence is a measure of how one probability distribution
+           is different from the second. In a simple case a Kullback-Leibler divergence of 0
+           indicates that two distribution in quiestion are identical, while KL divergence
+           of 1 indicates that two distribution are totally independent of each other. 
 
         
 To understand better: https://en.wikipedia.org/wiki/Mutual_information
