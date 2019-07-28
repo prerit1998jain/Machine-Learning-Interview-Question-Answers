@@ -90,6 +90,8 @@ ANSWER: DEFINITION is mentioned in one of the above questions.
         combinations of dataset into account.
         DISADVANTAGES:
 
+To understand better: https://www.analyticsvidhya.com/blog/2016/12/introduction-to-feature-selection-methods-with-an-example-or-how-to-select-the-right-variables/
+
 QUESTION: WHY IS FEATURE SELECTION REQUIRED?
 ANSWER: Feature selection is one of the trivial part of building a machine learning
         model. Generally the data collected from a source consists of many unnecessary
@@ -97,9 +99,41 @@ ANSWER: Feature selection is one of the trivial part of building a machine learn
         Also, some of the variables may be correlated to each other, and the one doesn't
         add much information if first one is already added in our model, so these
         variables without adding any information, just increasing the computations.
-
         Also, irrelevant and partially relevant features can negatively impact the
         model performance.
-
         Hence, it is necessary to get right number of variables, and right features
         selected for an efficient and accurate model.
+
+
+QUESTION: WHAT IS FORWARD FEATURE SELECTION METHOD? ADVANTAGES AND DISADVANTAGES.
+ANSWER: Forward feature selection is a wrapper method for feature selection, where we
+        start with no features and add the features in the model one by one, untill
+        the performance doesn't stops improving. The feature added is the one which
+        best improves the performance.
+
+        ADVANTAGES: It helps in identifing the correlated features, and avoid there
+        incorporation in the model.
+        DISADVANTAGES: The major disadvantage of any of the techniques using wrapper
+        method is that, it uses a lot of computational resources and is a time
+        consuming process.
+
+QUESTION: WHAT IS BACKWARD FEATURE SELECTION METHOD? ADVANTAGES AND DISADVANTAGES.
+ANSWER: It is the opposite of forward feature selection method. We start from all
+        the features and removes the least significant feature at each iteration
+        which improves the performance of the model. We repeat this untill no further
+        improvement is possible.
+
+        ADVANTAGES: The backward feature selection ensures better optimiality of
+        larger subsets than the forward feature selection because, the forward
+        feature selection stops when the model performance stops improving, and
+        hence, the subset of features selected may be not the optimal one,
+        because later combinations weren't tried.
+
+        DISADVANTAGES: The backward feature selection is computationally more
+        expensive than forward if we consider stopping the iterations when no further
+        improvements are achieved.
+
+To Understand Better: http://clopinet.com/isabelle/Projects/ETH/Questions_lecture_8.html
+
+QUESTION: WHAT IS FILTER FEATURE SELECTION METHOD AND DESCRIBE TWO OF THEM?
+ANSWER: Filter 
