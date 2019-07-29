@@ -1,0 +1,5 @@
+## Curse of Dimensionality ##
+
+QUESTION: DESCRIBE THE CURSE OF DIMENSIONALITY WITH EXAMPLES.
+ANSWER:
+       
